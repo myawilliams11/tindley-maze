@@ -57,14 +57,29 @@ function move(dRow, dCol, anim) {
     // rows to move the player by, and dCol is used to determine how many columns to move the player by.
     // Calculate the coordinates the player wants to move to.
 
-    // Using avatarRow and dRow, compute destRow (where the player should move
-    // vertically). You'll need to replace "undefined" to do so.
-    const destRow = undefined; 
-    // Using avatarCOl and dCol, compute destCol (where the player should move
-    // vertically). You'll need to replace "undefined" to do so.
-    const destCol = undefined;
 
-    const destCell = map[destRow][destCol];
+    // Using avatarRow and dRow, define a variable named "destRow" (where the
+    // player should move vertically). You'll need to replace "undefined" to do
+    // so.
+
+    // DEFINE destRow HERE
+
+    // Using avatarCol and dCol, define a variable named "destCol" (where the player should move
+    // vertically). You'll need to replace "undefined" to do so.
+
+    // DEFINE destCol HERE
+
+    // Finally, define a variable named "destCell" which is the cell at
+    // (destRow, destCol). Remember that to access items in a one-dimentional
+    // array, you'll need to do something like "arr[row]", where "arr" is the
+    // name of your array variable. For a two-dimensional array (like our map),
+    // you'll need two pairs of brackets like this: arr[row][col]. 
+
+    // DEFINE destCell HERE
+
+    // Keep in mind that the name of the array you want to access here is "map"
+
+    // DO NOT EDIT BELOW THIS LINE --------------------------------------------/
 
     // Check that it is within the bounds of the map, and not a wall.
     if(destCell && destCell !== "W") {
