@@ -52,9 +52,18 @@ redrawAvatar("slideRight");
 // dRow is the desired change in row (-1, 0, or +1)
 // dCol is the desired change in column (-1, 0, or +1)
 function move(dRow, dCol, anim) {
+    // "avatarRow" and "avatarCol" are the current row and column the player is on.
+    // The way this function should work, is that dRow is used to determine how many
+    // rows to move the player by, and dCol is used to determine how many columns to move the player by.
     // Calculate the coordinates the player wants to move to.
-    const destRow = avatarRow + dRow;
-    const destCol = avatarCol + dCol;
+
+    // Using avatarRow and dRow, compute destRow (where the player should move
+    // vertically). You'll need to replace "undefined" to do so.
+    const destRow = undefined; 
+    // Using avatarCOl and dCol, compute destCol (where the player should move
+    // vertically). You'll need to replace "undefined" to do so.
+    const destCol = undefined;
+
     const destCell = map[destRow][destCol];
 
     // Check that it is within the bounds of the map, and not a wall.
@@ -78,22 +87,6 @@ document.addEventListener('keydown', (event) => {
     // For example move(1, 0, "slideDown") would move the player 1 square down,
     // 0 squares to the right, and use a "slideDown" animation when moving the player.
 
-    // Fill out the move function with the proper arguments to get the player to move
-    // correctly
-    switch(keyName) {
-        case "ArrowDown":
-            move();
-            break;
-        case "ArrowUp":
-            move();
-            break;
-        case "ArrowLeft":
-            move();
-            break;
-        case "ArrowRight":
-            move();
-            break;
-        default:
-            console.log('keydown event\n\n' + 'key: ' + keyName);
-    }
+    // Write some logic to check the value of "keyName" and call "move()" with
+    // the proper arguments
 });
