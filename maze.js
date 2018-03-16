@@ -74,6 +74,8 @@ document.addEventListener('keydown', (event) => {
     // keyName will be one of "ArrowDown", "ArrowUp", "ArrowLeft" or "ArrowRight"
     const keyName = event.key;
 
+    // START HERE -----------------------------------------/
+    
     // move takes 3 arguments: a row offset, a column offset, and an animation.
     // For example move(1, 0, "slideDown") would move the player 1 square down,
     // 0 squares to the right, and use a "slideDown" animation when moving the player.
