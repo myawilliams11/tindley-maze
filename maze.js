@@ -4,6 +4,8 @@ const avatar = document.getElementById("avatar");
 // Size of the squares in the grid, in pixels.
 const squareSize = 33;
 
+// START HERE
+
 // Using the map in map.js, create a maze game. "W" represents walls, "S"
 // represents the player's start position, "F" represents the finish position
 
