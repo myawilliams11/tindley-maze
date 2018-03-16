@@ -52,6 +52,7 @@ redrawAvatar("slideRight");
 // dRow is the desired change in row (-1, 0, or +1)
 // dCol is the desired change in column (-1, 0, or +1)
 function move(dRow, dCol, anim) {
+    // START HERE
     // "avatarRow" and "avatarCol" are the current row and column the player is on.
     // The way this function should work, is that dRow is used to determine how many
     // rows to move the player by, and dCol is used to determine how many columns to move the player by.
