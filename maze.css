@@ -1,0 +1,32 @@
+body {font-family: sans-serif;}
+#mazeDiv {position: relative;}
+#avatar {width: 33px; height: 33px; position: absolute; background: url('chok.png'); background-size: contain; animation-duration: 100ms;}
+#youWonDiv {position: absolute; left: 100px; top: 100px; width: 500px; height: 120px; font-size: 100px; background: lightgray; text-align: center; display: none;}
+.row {display: flex; height: 33px;}
+.cell {display: flex; width: 33px; height: 33px; justify-content: center; align-items: center; font-size: 24px;}
+.W {background: #00356b;}
+
+@keyframes slideLeft {
+    from {margin-left: 33px;}
+    to {margin-left: 0;}
+  }
+  .slideLeft {animation-name: slideLeft;}
+  
+  @keyframes slideRight {
+    from {margin-left: -33px;}
+    to {margin-left: 0;}
+  }
+  .slideRight {animation-name: slideRight;}
+  
+  @keyframes slideUp {
+    from {margin-top: 33px;}
+    to {margin-top: 0;}
+  }
+  .slideUp {animation-name: slideUp;}
+  
+  @keyframes slideDown {
+    from {margin-top: -33px;}
+    to {margin-top: 0;}
+  }
+  .slideDown {animation-name: slideDown;}
+  
